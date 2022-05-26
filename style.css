@@ -27,7 +27,7 @@ header {
 }
 
 h1{
-  -webkit-text-stroke: 1px wheat;
+  -webkit-text-stroke: 0.5px wheat;
 }
 
 .main-nav {
