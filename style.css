@@ -22,8 +22,7 @@ nav.Zone_Green {
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-radius: 10px;
-}
+  }
 
 a.top {
   color: black;
@@ -33,13 +32,17 @@ a.top {
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 10px;
   
 }
 
 a.top:hover {
   background-color: rgb(150, 119, 221);
-  
+  font-size: 110%;
+  border: 3px solid  black;
+  transition: 0.3s;
 }
+
 .zone {
   cursor: pointer;
   color:#fff;
@@ -110,3 +113,4 @@ img{
   height: 50%;
   border-radius: 10%;
 }
+
