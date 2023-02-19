@@ -90,14 +90,30 @@
     background-color: black;
     max-width: 5%;
     height: auto; 
-    margin: 0px
+    margin: 0px;
+    border-radius: 40%;
  }
  
+ .github_img:hover {
+    max-width: 10%;
+    border-radius: 10%;
+    transition: 0.5s;
+ }
 
 .badge-primary {
-    border-radius: 3px;
-    display: inline-flex;
+    padding: 4px;
+    border-radius: 0.5em;
+    display: inline-block;
     font-size: 0.8em;
     color: white;
     background-color: rgb(18, 59, 207);
+}
+
+.badge-primary:hover {
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.badge_text {
+  text-align: justify;
 }
