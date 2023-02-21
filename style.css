@@ -69,15 +69,13 @@ header {
     font-size: 3rem;
 }
 
-h1{
+h1 {
   -webkit-text-stroke: 0.5px wheat;
-  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   text-shadow: 0px 0px 10px white;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0px 0px 10px white;
   margin: 10px;
 }
