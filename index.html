@@ -3,9 +3,10 @@
 <script scr="metadata/metadata.js"></script>
   <head>
     <title>Rhys Shaw</title>
-    <link rel="icon" type="image/x-icon" href="Assets/images/galaxy_icon.png">
+    <link rel="icon" type="image/x-icon" href="Assets/images/galaxy_icon.ico">
     <!-- Required meta tags -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav class="Zone_Green">
@@ -21,22 +22,22 @@
     </nav>
     
     <div class="container-top">
-        <img id="profile-pic" src="Assets/images/head_shot.jpg">
-        <div class="greeting">
+        <img id="profile-pic" src="Assets/images/head_shot.jpg" data-aos="fade-right" data-aos-delay="200">
+        <div class="greeting" data-aos="fade-down" data-aos-delay="200">
           <h1 data-value="Rhys Shaw M.Inst.P MSc BSc">Rhys Shaw M.Inst.P MSc BSc</h1>
           <a><text data-value="Astrophysics Researcher">Astrophysics Researcher.</text></a>
         </div>
     </div>
     <div class="doc">
       <hr class="line">
-        <div class="container_mid">
+        <div class="container_mid" data-aos="fade-up">
           <a><h2 data-value="Greetings">Greetings</h2></a>
           <article> Hello, I am Rhys Shaw. Physics PhD student at the University of Bristol.</article>
           <article> This Site is under development......</article>
         </div>
         
         <hr class="line">
-        <div class="container_mid">
+        <div class="container_mid" data-aos="fade-up">
           <a><h2  data-value="Education">Education</h2></a>
           <h3>Academic</h3>
           <article>2022-2026 |  PhD Physics -- Research Area: Radiowave Astronomy and Machine Learning. University of Bristol</article>
@@ -48,7 +49,7 @@
         <hr class="line">
 
         <hr class="line">
-        <div class="container_mid">
+        <div class="container_mid" data-aos="fade-up">
           <a id="Contact"><h2 data-value="Contact">Contact</h2></a>
           <article> If you want to contact me for what ever reason you can do so with ...</article>
           <article> Email: <a href="rhys.shaw@bristol.ac.uk" data-value="rhys.shaw@bristol.ac.uk">rhys.shaw@bristol.ac.uk</a></article>
@@ -58,6 +59,20 @@
         </div>
     </div>
 
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Rhys Shaw</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
     </body>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+
 </html>
