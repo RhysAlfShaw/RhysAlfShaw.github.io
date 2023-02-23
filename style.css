@@ -7,7 +7,7 @@ html {
   background-size: cover;
   padding: 0;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 @media only screen and (max-width: 200px){
@@ -19,12 +19,13 @@ html {
 
 nav.Zone_Green {
   background-color: rgb(187, 206, 255);
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   border-radius: 5em;
+  font-size: 0.8em;
   }
 
 a.top {
