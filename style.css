@@ -78,7 +78,7 @@ h1 {
 
 h2 {
   text-shadow: 0px 0px 10px white;
-  margin: 10px;
+  
 }
 
 h3 {
@@ -113,7 +113,7 @@ text {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 50vh;
+  height: 40vh;
 }
 
 .doc{
@@ -131,3 +131,37 @@ hr {
  border-width: 0px;
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(187, 206, 255);
+}
+
+.Background-img-info{
+  background-color:rgba(187, 206, 255,0.6) ;
+  align-items: right;
+  margin: 10px;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-bottom: 5px;
+}
+
+.bg-but-cont {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.bg-button {
+  background-color: rgb(187,206,255);
+  padding: 5px;
+  border-radius: 8px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  
+}
