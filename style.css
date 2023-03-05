@@ -165,3 +165,14 @@ footer {
   color: black;
   
 }
+
+.Resource {
+  align-items: flex-start;
+  padding:10px
+}
+
+h3 {
+  padding: 0;
+  margin: 0%;
+  padding-bottom: 5px;
+}
