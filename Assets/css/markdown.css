@@ -1,0 +1,48 @@
+html {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #e0dddd;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: 'Noto Sans';
+    font-weight: 100;
+    line-height: 1.2;
+
+}
+
+body {
+    padding : 50;
+}
+
+pre {
+    background-color: #2b2a2a;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3%;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+    color: grey;
+}
+
+.hljs-attr {
+    color: lightskyblue;
+}
+.hljs-string {
+    color: rgb(240, 174, 75);
+}
+
+img {
+    margin : 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
