@@ -1,0 +1,45 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10;
+  }
+body {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #000;
+}   
+
+table {
+    margin: 5%;
+    text-align: right;
+    border: 1px dashed #000;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.table-container {
+    width:100%;
+    height:auto;
+    display: center;
+    align-items: center;
+}
+
