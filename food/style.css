@@ -19,6 +19,11 @@ body {
     color: #000;
 }   
 
+td {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
 table {
     margin: 5%;
     text-align: right;
