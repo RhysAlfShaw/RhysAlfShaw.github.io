@@ -7,3 +7,10 @@ Neual Network
 Git
 Web Development
 Docker
+PhD Research: Radio source multipicity and Machine Learning.
+Inprogress ~ Due for completion 2026
+Developing tools to create true associations between seperated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data.
+Python
+Machine Learning
+Neual Network
+Radio Astronomy
