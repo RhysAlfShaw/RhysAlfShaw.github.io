@@ -1,0 +1,9 @@
+AIMLAC Coding Challenge
+Inprogress ~ Due for completion September 2023
+Working with a team to develop a tool to return the highest profit from a solar and wind installation. This is part of the training provided by the AIMLAC CDT.
+Python
+SQL
+Neual Network
+Git
+Web Development
+Docker
