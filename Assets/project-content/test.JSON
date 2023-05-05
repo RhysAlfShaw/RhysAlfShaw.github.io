@@ -1,4 +1,5 @@
 [{
+  "type":"Research",
    "title": "PhD Research: Radio source multipicity and Machine Learning.",
     "status": "Inprogress ~ Due for completion 2026",
     "description": "Developing tools to create true associations between separated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data.",
@@ -19,6 +20,7 @@
     "githubLink": "https://github.com/RhysAlfShaw"
   },
   {
+    "type":"Software",
     "title": "PhD Research: Radio source multipicity and Machine Learning.",
      "status": "Inprogress ~ Due for completion 2026",
      "description": "Developing tools to create true associations between separated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data.",
