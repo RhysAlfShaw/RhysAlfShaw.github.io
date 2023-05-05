@@ -68,7 +68,7 @@
         {"text": "PiPy"},
         {"text": "Web-Scraping"}
       ],
-      "githubLink": "https://github.com/RhysAlfShaw/LSCpy",
+      "githubLink": "https://github.com/RhysAlfShaw/LSCpy"
     },
     {
       "type":"RIGHT",
@@ -92,7 +92,7 @@
         {"text": "JavaScript"},
         {"text": "BackEnd"},
         {"text": "FrontEnd"},
-        {"text": "API"}
+        {"text": "API"},
         {"text": "React"},
         {"text": "Node.js"},
         {"text": "Web Development"}
