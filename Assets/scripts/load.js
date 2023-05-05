@@ -3,83 +3,78 @@
 //const filePath = 'https://raw.githubusercontent.com/RhysAlfShaw/RhysAlfShaw.github.io/main/Assets/project-content/test.txt';
     
 // change to local file path
-const filePath = 'Assets/project-content/test.txt';
-var data ={};
+const filePath = "https://raw.githubusercontent.com/RhysAlfShaw/RhysAlfShaw.github.io/main/Assets/project-content/test.JSON";
+
 // for json 
 // Fetch the JSON data
-//fetch('data.json')
-// .then(response => response.json())
-//  .then(data => {
-    // Do something with the data
-//    console.log(data.title); // Output: "PhD Research: Radio source multipicity and Machine Learning."
-//    console.log(data.status); // Output: "Inprogress ~ Due for completion 2026"
-//    console.log(data.description); // Output: "Developing tools to create true associations between separated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data."
-//    console.log(data.badges); // Output: [{text: "Python"}, {text: "Machine Learning"}, {text: "Neural Network"}, {text: "Radio Astronomy"}]
-//    console.log(data.githubLink); // Output: "https://github.com/RhysAlfShaw"
-//  });
-
-// Fetch the file
 fetch(filePath)
-  .then(response => response.text())
-  .then(text => {
-    // Split the file contents by line
-    const lines = text.split('\n');
-
-    // Loop through each line and save it as a variable
-    const data = {};
-    for (let i = 0; i < lines.length; i++) {
-      const variableName = `line${i + 1}`;
-      const variableValue = lines[i];
-
-      // Save the variable to be used later in the program
-      data[variableName] = variableValue;
-    }
-
-    // Create HTML elements for each line.
-    // create new div element
-    const newDiv = document.createElement("div");
-    newDiv.setAttribute("class", "card");
-    newDiv.setAttribute("data-aos", "fade-up");
+ .then(response => response.json())
+  .then(data => {
+    // length of json file
+    var num_items = Object.keys(data).length;
+    console.log(data)
+    // loop through json file
+    for (let i = 0; i < num_items; i++) {
+      // save json data to variables
+      const itemdata = data[i];
+     
+      const newDiv = document.createElement("div");
+      newDiv.setAttribute("class", "card");
+      newDiv.setAttribute("data-aos", "fade-up");
 
     // create new h2 element
-    const newH2 = document.createElement("h2");
-    newH2.textContent = data['line1'];
+      const newH2 = document.createElement("h2");
+      newH2.textContent = itemdata.title;
 
     // create h5 element
-    const newH5 = document.createElement("h5");
-    newH5.textContent = data['line2'];
+      const newH5 = document.createElement("h5");
+      newH5.textContent = itemdata.status;
 
     // create p element
-    const newP = document.createElement("p");
-    newP.textContent = data['line3'];
+      const newP = document.createElement("p");
+      newP.textContent = itemdata.description;
 
     // create a div for the buttons
-    const newDiv2 = document.createElement("div");
-    newDiv2.setAttribute("style","display:inline-flex");
-    var num_bages = 6;
+      const newDiv2 = document.createElement("div");
+      newDiv2.setAttribute("style","display:inline-flex");
+      
+      var num_badges = Object.keys(itemdata.badges).length;
     
-    for (let i = 0; i < num_bages; i++) {
-        const buton1 = document.createElement("span");
-        const buton2 = document.createElement("span");
-        const txt = document.createElement("txt")
-        buton1.setAttribute("class", "badge badge-primary");
-        buton2.setAttribute("style", "padding:3px;");
-        txt.setAttribute("class", "badge_text");
-        const linename = `line${i + 4}`;
-        txt.textContent = data[linename];
+      for (let i = 0; i < num_badges; i++) {
+          const buton1 = document.createElement("span");
+          const buton2 = document.createElement("span");
+          const txt = document.createElement("txt")
+          buton1.setAttribute("class", "badge badge-primary");
+          buton2.setAttribute("style", "padding:3px;");
+          txt.setAttribute("class", "badge_text");
+          txt.textContent = itemdata.badges[i].text;
         
-        buton2.appendChild(buton1);
-        buton1.appendChild(txt);
-        newDiv2.appendChild(buton2);
-    }
+          buton2.appendChild(buton1);
+          buton1.appendChild(txt);
 
-    // append child to parent
+          newDiv2.appendChild(buton2);
+  
+    } 
     newDiv.appendChild(newH2);
     newDiv.appendChild(newH5);
     newDiv.appendChild(newP);
     newDiv.appendChild(newDiv2);
 
+    // create a new div for the github link
+    const newDiv3 = document.createElement("div");
+    const newa = document.createElement("a");
+    newa.setAttribute("href", itemdata.githubLink);
+    newa.setAttribute("class", "github_link");
+    const newimg = document.createElement("img");
+    newimg.setAttribute("src", "Assets/images/github-logo.png");
+    newimg.setAttribute("class", "github_img");
+    newa.appendChild(newimg);
+    newDiv3.appendChild(newa);
+    newDiv.appendChild(newDiv3);
+
     // get element by id
-    const currentDiv = document.getElementById("LEFT");
+    console.log(itemdata.type)
+    const currentDiv = document.getElementById(itemdata.type);
     currentDiv.appendChild(newDiv);
+  }
   });
