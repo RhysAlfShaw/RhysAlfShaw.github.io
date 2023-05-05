@@ -20,26 +20,85 @@
     "githubLink": "https://github.com/RhysAlfShaw"
   },
   {
-    "type":"RIGHT",
-    "title": "PhD Research: Radio source multipicity and Machine Learning.",
-     "status": "Inprogress ~ Due for completion 2026",
-     "description": "Developing tools to create true associations between separated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data.",
-     "badges": [
-       {
-         "text": "Python"
-       },
-       {
-         "text": "Machine Learning"
-       },
-       {
-         "text": "Neural Network"
-       },
-       {
-         "text": "Radio Astronomy"
-       }
-     ],
-     "githubLink": "https://github.com/RhysAlfShaw"
-   }
+    "type":"LEFT",
+    "title": "MSc Project: Studing the effect of Substucture in Star Clusters.",
+        "status": "Completed 2021",
+        "description": "Simulating a planetary system orbiting solar mass stars within a fractally substructured cluster using a dual integrator approach, where the cluster was integrated with NBODY6++ and star positions interpolated for use by the planetary integrator.",
+        "badges": [
+          {"text": "Python"},
+          {"text": "Linux"},
+          {"text": "Fortran"},
+          {"text": "Computational Physics"}
+        ],
+        "githubLink": "https://github.com/RhysAlfShaw/MSc_Project_Code"
+      },
+   {
+    "type":"LEFT",
+    "title": "BSc Project: Examining Galaxy Cluster Properties from seperatly selected samples.",
+        "status": "Completed 2020",
+        "description": "Measuring galaxy cluster morphology, with a custom algorithm, and their luminosity-temperature scaling relation with observational data from the Chandra observatory was done to compare two samples of galaxy clusters.",
+        "badges": [
+          {"text": "Python"},
+          {"text": "Linux"},
+          {"text": "Data Analysis"},
+          {"text": "X-ray Astronomy"}
+        ],
+        "githubLink": "https://github.com/RhysAlfShaw/Portfolio/tree/main/FInal_Year_Project_Bristol"
+    },
+    {
+      "type":"RIGHT",
+      "title": "AIMLAC Coding Challenge",
+        "status": "Inprogress ~ Due for completion September 2023",
+        "description": "Working with a team to develop a tool to return the highest profit from a solar and wind installation. This is part of the training provided by the AIMLAC CDT.",
+        "badges": [
+          {"text": "Python"},
+          {"text": "Machine Learning"},
+          {"text": "Neural Network"},
+          {"text": "Renewable Energy"}
+        ],
+        "githubLink": "https://github.com/RhysAlfShaw"
+    },
+    {
+      "type":"RIGHT",
+      "title":"LCSpy Python Package",
+      "status": "Published 2023, Ongoing Maintenance",
+      "description":"Small package that will generate a source cutout from the LoFAR Survey Archive given a valid position. It can also interface with the LoFAR source catalogue to return catalogue information from a specfic position and search radius.",
+      "badges": [
+        {"text": "Python"},
+        {"text": "PiPy"},
+        {"text": "Web-Scraping"}
+      ],
+      "githubLink": "https://github.com/RhysAlfShaw/LSCpy",
+    },
+    {
+      "type":"RIGHT",
+      "title":"Personal Website",
+      "status": "Published 2022, Ongoing Maintenance and Development.",
+      "description":"This Website! I created and have been maintaining this website since 2022. This website acts as a personal space to share information, share my projects and present my experience.",
+      "badges": [
+        {"text": "HTML5"},
+        {"text": "CSS"},
+        {"text": "FrontEnd"},
+        {"text": "JavaScript"}
+      ],
+      "githubLink": "https://github.com/RhysAlfShaw/RhysAlfShaw.github.io"
+    },
+    {
+      "type":"RIGHT",
+      "title":"Smart Brain Web App",
+      "status": "Completed 2022.",
+      "description":"WebApp created as part of the ZeroToMastery web developement cource on Udemy.",
+      "badges": [
+        {"text": "JavaScript"},
+        {"text": "BackEnd"},
+        {"text": "FrontEnd"},
+        {"text": "API"}
+        {"text": "React"},
+        {"text": "Node.js"},
+        {"text": "Web Development"}
+      ],
+      "githubLink": "https://github.com/RhysAlfShaw/SmartBrain"
+    }
 ]
 
 
