@@ -1,23 +1,17 @@
 [{
   "type":"LEFT",
-   "title": "PhD Research: Radio source multipicity and Machine Learning.",
-    "status": "Inprogress ~ Due for completion 2026",
-    "description": "Developing tools to create true associations between separated radio sources using morphological, spectral and flux analysis of the source to feed into a neural network to learn characteristics of these associations. This will allow for quick processing of SKA and future radio observational data.",
+   "title": "PhD Research: DRUID.",
+    "status": "Inprogress",
+    "description": "A Source finder for Astronomical Images using Persistent Homology.",
     "badges": [
       {
         "text": "Python"
       },
       {
-        "text": "Machine Learning"
-      },
-      {
-        "text": "Neural Network"
-      },
-      {
-        "text": "Radio Astronomy"
+        "text": "Astronomy"
       }
     ],
-    "githubLink": "https://github.com/RhysAlfShaw"
+    "githubLink": "https://github.com/RhysAlfShaw/TRSF-dev"
   },
   {
     "type":"LEFT",
@@ -48,7 +42,7 @@
     {
       "type":"RIGHT",
       "title": "AIMLAC Coding Challenge",
-        "status": "Inprogress ~ Due for completion September 2023",
+        "status": "Completion September 2023",
         "description": "Working with a team to develop a tool to return the highest profit from a solar and wind installation. This is part of the training provided by the AIMLAC CDT.",
         "badges": [
           {"text": "Python"},
@@ -56,7 +50,7 @@
           {"text": "Neural Network"},
           {"text": "Cloud Deployment"}
         ],
-        "githubLink": "https://github.com/RhysAlfShaw"
+        "githubLink": "https://github.com/"
     },
     {
       "type":"RIGHT",
