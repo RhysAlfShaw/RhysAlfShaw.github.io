@@ -4,7 +4,7 @@
     
 // change to local file path
 const filePath = "https://raw.githubusercontent.com/RhysAlfShaw/RhysAlfShaw.github.io/main/Assets/project-content/test.JSON";
-
+// filePath = "../test.JSON"
 // for json 
 // Fetch the JSON data
 fetch(filePath)
@@ -12,6 +12,7 @@ fetch(filePath)
   .then(data => {
     // length of json file
     var num_items = Object.keys(data).length;
+  console.log(num_items)
     console.log(data)
     // loop through json file
     for (let i = 0; i < num_items; i++) {
