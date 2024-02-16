@@ -2,16 +2,22 @@
   "type":"LEFT",
    "title": "PhD Research: DRUID.",
     "status": "Inprogress",
-    "description": "A Source finder for Astronomical Images using Persistent Homology.",
+    "description": "A Source finder and deblender for Astronomical Images using Persistent Homology.",
     "badges": [
       {
         "text": "Python"
       },
       {
         "text": "Astronomy"
+      },
+      {
+        "text": "GPU Acceleration"
+      },
+      {
+        "text": "Source Finding"
       }
     ],
-    "githubLink": "https://github.com/RhysAlfShaw/TRSF-dev"
+    "githubLink": "https://github.com/RhysAlfShaw/DRUID"
   },
   {
     "type":"LEFT",
@@ -40,17 +46,31 @@
         "githubLink": "https://github.com/RhysAlfShaw/Portfolio/tree/main/FInal_Year_Project_Bristol"
     },
     {
+      "type":"LEFT",
+      "title":"RASBODY",
+      "status":"In development",
+      "description":"A personal parallelized Nbody Gravity integrator. This follows the Barns-hut algorithm for reducing computational costs. The plan is to have the main program written in C++ with a interactive python wrapper.",
+      "badges":[
+        {"text":"C++"},
+        {"text":"Python"},
+        {"text":"Numerical Integration"},
+        {"text":"Simulations"},
+        {"text":"Parrallelization"}
+      ],
+      "githubLink":"PRAIVATE -- Coming Soon!"
+    },
+    {
       "type":"RIGHT",
       "title": "AIMLAC Coding Challenge",
-        "status": "Completion September 2023",
-        "description": "Working with a team to develop a tool to return the highest profit from a solar and wind installation. This is part of the training provided by the AIMLAC CDT.",
+        "status": "Completed September 2023",
+        "description": "Working with a team to develop a tool to return the highest profit from a solar and wind installation. This is part of the training provided by the AIMLAC CDT. My role fouced on full stack developing the backend server and the front end that interacts with it.",
         "badges": [
           {"text": "Python"},
           {"text": "Machine Learning"},
           {"text": "Neural Network"},
           {"text": "Cloud Deployment"}
         ],
-        "githubLink": "https://github.com/"
+        "githubLink": "https://github.com/Abercardsea/Abercardsea-solution"
     },
     {
       "type":"RIGHT",
@@ -79,6 +99,19 @@
     },
     {
       "type":"RIGHT",
+      "title": "Live Audio Dashboard",
+      "status":"In development",
+      "description":"A live audio interface for personal use and waveform analysis. Built with Flask.",
+      "badges" :[
+        {"text":"Python"},
+        {"text":"HTML5"},
+        {"text":"JavaScript"},
+        {"text":"Audio Analysis"}
+      ],
+      "githubLink":"PRIVATE -- coming soon."
+    },
+    {
+      "type":"RIGHT",
       "title":"Smart Brain Web App",
       "status": "Completed 2022.",
       "description":"WebApp created as part of the ZeroToMastery web developement cource on Udemy.",
@@ -94,7 +127,3 @@
       "githubLink": "https://github.com/RhysAlfShaw/SmartBrain"
     }
 ]
-
-
-
-  
