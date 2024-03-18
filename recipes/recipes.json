@@ -15,5 +15,59 @@
     {
         "text": "Easy"
     }
+    ]},
+    {
+        "title": "Dahl",
+        "description": "Dahl (lentil Curry).",
+        "ingredients": "List of required ingredients and quantities ",
+        "badges": [
+        {
+            "text": "Curry"
+        },
+        {
+            "text": "South Asia"
+        },
+        {
+            "text": "Vegan"
+        },
+        {
+            "text": "Tasty"
+        }
+    ]},
+    {
+        "title": "Coconut Chickpea & Mushroom Curry",
+        "description": "Coconut milk, chickpea and mushroom curry. Serve with rice or chipati's.",
+        "ingredients": "List of required ingredients and quantities ",
+        "badges": [
+        {
+            "text": "Curry"
+        },
+        {
+            "text": "Asia"
+        },
+        {
+            "text": "Vegan"
+        },
+        {
+            "text": "Tasty"
+        }
+    ]},
+    {
+        "title": "Other",
+        "description": "Description",
+        "ingredients": "List of required ingredients and quantities ",
+        "badges": [
+        {
+            "text": "Keyword"
+        },
+        {
+            "text": "Keyword"
+        },
+        {
+            "text": "Keyword"
+        },
+        {
+            "text": "Keyword"
+        }
     ]}
 ]
