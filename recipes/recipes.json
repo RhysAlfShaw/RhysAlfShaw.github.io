@@ -1,16 +1,19 @@
 [{
-    "title": "PhD Research: DRUID.",
-    "description": "A Source finder and deblender for Astronomical Images using Persistent Homology.",
-    "ingredients": "d ",
+    "title": "Apple Crumble",
+    "description": "Apple and cinamon Crumble serve with custard or icecream or both.",
+    "ingredients": "List of required ingredients and quantities ",
     "badges": [
     {
-        "text": "Desert"
+        "text": "Dessert"
     },
     {
         "text": "Apples"
     },
     {
         "text": "Cinamon"
+    },
+    {
+        "text": "Easy"
     }
     ]}
 ]
