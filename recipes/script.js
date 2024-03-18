@@ -5,14 +5,28 @@ fetch(filePath)
  .then(data => {
    // length of json file
    var num_items = Object.keys(data).length;
- console.log(num_items)
+   console.log(num_items)
    console.log(data)
    // loop through json file
    for (let i = 0; i < num_items; i++) {
      // save json data to variables
     const itemdata = data[i];
     
-    const newDiv = document.createElement("div");
+    const LargeTable = document.createElement("table")
+    LargeTable.setAttribute("class", "card");
+    LargeTable.setAttribute("data-aos", "fade-up");
+    const tableRow = document.createElement("tr")
+
+    const tablepiccolumn = document.createElement("td")
+    
+    const picture = document.createElement("img")
+    if (itemdata.image !== undefined){
+        picture.src = itemdata.image
+        picture.setAttribute("style","width:400px; height:400px")
+        tablepiccolumn.appendChild(picture)
+    }
+    
+    const newDiv = document.createElement("td");
     newDiv.setAttribute("class", "card");
     newDiv.setAttribute("data-aos", "fade-up");
 
@@ -86,8 +100,10 @@ fetch(filePath)
    newDiv.appendChild(Instruction_title);
    newDiv.appendChild(Methods_section);
    newDiv.appendChild(newDiv2);
-
+   tableRow.appendChild(newDiv);
+   tableRow.appendChild(picture);
+   LargeTable.appendChild(tableRow);
    const currentDiv = document.getElementById('row');
-   currentDiv.appendChild(newDiv);
+   currentDiv.appendChild(LargeTable);
  }
  });

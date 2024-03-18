@@ -126,3 +126,9 @@ text {
     padding: 3px;
     background-color: rgb(187, 206, 255);
   }
+
+.row {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center;
+}
