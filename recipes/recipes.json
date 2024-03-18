@@ -1,7 +1,31 @@
 [{
     "title": "Apple Crumble",
     "description": "Apple and cinamon Crumble serve with custard or icecream or both.",
-    "ingredients": "List of required ingredients and quantities ",
+    "ingredients": [
+        {
+            "text": "Brammely Apples",
+            "quantities":"3 Medium Sized"
+        
+        },
+        {
+            "text":"Cinamon",
+            "quantities":"1 Tablespoon"
+        },
+        {
+            "text": "Butter",
+            "quantities":"175g"
+        },
+        {
+            "text":"Plain Flour",
+            "quantities":"125g"
+        },
+        {
+            "text":"Caster or brown sugar",
+            "quantities":"225g" 
+        }
+
+    ],
+    
     "badges": [
     {
         "text": "Dessert"
