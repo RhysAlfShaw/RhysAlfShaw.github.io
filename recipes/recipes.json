@@ -25,7 +25,7 @@
 
     ],
 
-    "Methods": "first start with cutting the veggies.",
+    "Methods": "First start with cutting the veggies.",
     
     "badges": [
     {
@@ -44,7 +44,21 @@
     {
         "title": "Dahl",
         "description": "Dahl (lentil Curry).",
-        "ingredients": "List of required ingredients and quantities ",
+        "ingredients": [
+            {
+                "text" : "Coconut Milk",
+                "quantities": "1 Can"
+            },
+            {
+                "text": "Red Lentils",
+                "quantities": "200g"
+            },
+            {
+                "text": "Onion",
+                "quantities":"1 large (finely cut)"
+            }
+        ],
+        "Methods": "First Start with cutting the veggies.",
         "badges": [
         {
             "text": "Curry"
@@ -62,7 +76,17 @@
     {
         "title": "Coconut Chickpea & Mushroom Curry",
         "description": "Coconut milk, chickpea and mushroom curry. Serve with rice or chipati's.",
-        "ingredients": "List of required ingredients and quantities ",
+        "ingredients": [
+            {
+                "text":"Chickpea",
+                "quantities":"1 Can (non salted)"
+            },
+            {
+                "text": "Coconut Milk",
+                "quantities": "1 Can"
+            }
+        ],
+        "Methods": "First Start with cutting the veggies.",
         "badges": [
         {
             "text": "Curry"
@@ -80,7 +104,14 @@
     {
         "title": "Other",
         "description": "Description",
-        "ingredients": "List of required ingredients and quantities ",
+        "ingredients": [
+            {
+                "text":"ingredient 1",
+                "quantities":" 100g"
+            }
+        ],
+        "Methods": "First Start with cutting the veggies.",
+        
         "badges": [
         {
             "text": "Keyword"
