@@ -1,0 +1,33 @@
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .controls button {
+    margin: 0 0.5rem;
+  }
+  
+  .fade {
+    animation: fade 0.5s linear;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
