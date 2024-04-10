@@ -1,11 +1,11 @@
-const PATH_txt = "https://rhysalfshaw.com/AlfScourfield/image_ids.txt";
+const PATH_txt = "https://rhysalfshaw.com/AlfScourfield/image_links.txt";
 let currentIndex = 1;
 let lines = [];
 let intervalId;
 
 // Function to update the iframe src attribute with a fade transition
 function updateIframeSrc(index) {
-  const iframe = document.getElementById("iframe");
+  const iframe = document.getElementById("img");
   iframe.style.opacity = 0;
 
   setTimeout(() => {
@@ -14,7 +14,7 @@ function updateIframeSrc(index) {
       iframe.style.opacity = 1;
     };
     updateCounter(currentIndex, lines.length);
-  }, 10);
+  }, 100);
 }
 
 fetch(PATH_txt)
