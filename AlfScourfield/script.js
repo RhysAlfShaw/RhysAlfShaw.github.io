@@ -1,4 +1,4 @@
-const PATH_txt = "https://rhysalfshaw.com/KAScourfield/image_ids.txt";
+const PATH_txt = "https://rhysalfshaw.com/AlfScourfield/image_ids.txt";
 
 let currentIndex = 1; // Current index of the displayed URL
 let lines = []; // This will hold the lines from the fetched text file
