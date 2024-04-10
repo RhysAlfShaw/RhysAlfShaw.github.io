@@ -20,6 +20,3 @@ var htmlObject = document.createElement('tbody');
 htmlObject.innerHTML = output;
 document.getElementById("table").appendChild(htmlObject);
 });
-
-
-

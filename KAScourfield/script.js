@@ -1,41 +1,75 @@
-async function getPublicDriveFile(fileId) {
-    /**
-     * Retrieves the contents of a publicly shared file on Google Drive.
-     * 
-     * @param {string} fileId - The ID of the file on Google Drive.
-     * @returns {Promise<Blob>} - The contents of the file.
-     */
-    try {
-      const url = `https://drive.google.com/uc?export=view&id=${fileId}`;
-      const response = await fetch(url);
-  
-      if (response.status === 200) {
-        return await response.blob();
-      } else {
-        throw new Error(`Failed to retrieve file. Status code: ${response.status}`);
-      }
-    } catch (error) {
-      throw new Error(`Failed to retrieve file: ${error.message}`);
+const PATH_txt = "https://rhysalfshaw.com/KAScourfield/image_ids.txt";
+
+let currentIndex = 1; // Current index of the displayed URL
+let lines = []; // This will hold the lines from the fetched text file
+let intervalId; // To hold the interval id for stopping later
+
+// Function to update the iframe src attribute with a fade transition
+function updateIframeSrc(index) {
+    const iframe = document.getElementById("iframe");
+    iframe.style.opacity = 0; // Fade out
+    setTimeout(() => { // Delay for a short period to allow the fade out effect to be visible
+        iframe.src = lines[index]; // Update the iframe source
+        iframe.onload = () => {
+            iframe.style.opacity = 1; // Fade in once the new content is loaded
+        };
+        updateCounter(currentIndex, lines.length); // Update the counter display
+    }, 1000); // Adjust this delay to match the transition duration in CSS
+}
+
+fetch(PATH_txt)
+    .then(response => response.text())
+    .then(text => {
+        lines = text.split(/\r?\n/); // Split the text into lines
+        updateIframeSrc(currentIndex); // Initialize iframe with the first URL
+        startAutoPlay(); // Start autoplay after fetching data
+    })
+    .catch(error => {
+        console.error('Error fetching or processing the file:', error);
+    });
+
+// Function to start autoplay
+function startAutoPlay() {
+    intervalId = setInterval(incrementIndex, 20000); // Switch every 3 seconds
+}
+
+// Function to stop autoplay
+function stopAutoPlay() {
+    clearInterval(intervalId);
+}
+
+// Function to increment the index, wrapping if necessary
+function incrementIndex() {
+    currentIndex = (currentIndex + 1) % lines.length; // Wrap to 0 if at the end
+    updateIframeSrc(currentIndex);
+    updateCounter(currentIndex, lines.length);
+}
+
+// Function to decrement the index, wrapping if necessary
+function decrementIndex() {
+    if (currentIndex === 0) {
+        currentIndex = lines.length - 1; // Wrap to the last index
+    } else {
+        currentIndex -= 1; // Move to the previous index
     }
-  }
-  
-  (async () => {
-    // Example usage
-    const fileId = '143q7H8F5qcfAk-ojyWu5d314vFl4fThN'; // Replace with the actual file ID
-  
-    try {
-      const fileContent = await getPublicDriveFile(fileId);
-  
-      // Create a new image element
-      const img = document.createElement('img');
-      img.src = URL.createObjectURL(fileContent);
-  
-      // Append the image to the "slideImage" div
-      const slideImageDiv = document.querySelector('.slideImage');
-      slideImageDiv.appendChild(img);
-  
-      console.log('Image added to the slideImage div successfully!');
-    } catch (error) {
-      console.error('Error:', error.message);
-    }
-  })();
+    updateIframeSrc(currentIndex);
+    updateCounter(currentIndex, lines.length);
+}
+
+// Function to update the counter display
+function updateCounter(current, total) {
+    const counterElement = document.getElementById("counter");
+    counterElement.textContent = `${current} of ${total}`; // Display "X of Y" where X is the current index + 1, and Y is the total length
+}
+
+// Add click event listener to the "Previous" button
+document.getElementById("prevBtn").addEventListener("click", () => {
+    decrementIndex();
+    stopAutoPlay(); // Stop autoplay when manually navigating
+});
+
+// Add click event listener to the "Next" button
+document.getElementById("nextBtn").addEventListener("click", () => {
+    incrementIndex();
+    stopAutoPlay(); // Stop autoplay when manually navigating
+});
