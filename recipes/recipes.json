@@ -52,14 +52,31 @@
             },
             {
                 "text": "Red Lentils",
-                "quantities": "200g"
+                "quantities": "200g Ideally washed"
             },
             {
                 "text": "Onion",
                 "quantities":"1 large (finely cut)"
+            },
+            {
+                "text": "Garlic",
+                "quantities":"Min: 3 cloves (crushed or minced)"
+            },
+            {
+                "text": "Curry Powder",
+                "quantities":"How much you like"
+            },
+            {
+                "text": "Veggies",
+                "quantities":"Optional handful of what ever you have in the fridge"
+            },
+            {
+                "text": "MSG",
+                "quantities":"Optional"
             }
+
         ],
-        "Methods": "First Start with cutting the veggies.",
+        "Methods": "First Start with cutting the veggies. Saute onions and garlic and oil in a pan, once soft add the other veggies. Add the lentils and cococut milk and curry powder of choice. If you are feeling fancy add some MSG for that umamu flavour hit. Simmer and add awter when necessary untill the lentils are cooked. Enjoy!",
         "badges": [
         {
             "text": "Curry"
@@ -85,9 +102,29 @@
             {
                 "text": "Coconut Milk",
                 "quantities": "1 Can"
+            },
+            {
+                "text": "Mushrooms",
+                "quantities":"200g"
+            },
+            {
+                "text": "Onion",
+                "quantities":"1 large (finely cut)"
+            },
+            {
+                "text": "Garlic",
+                "quantities":"Min: 3 cloves (crushed or minced)"
+            },
+            {
+                "text": "Curry Powder",
+                "quantities":"How much you like"
+            },
+            {
+                "text": "MSG",
+                "quantities":"Optional"
             }
         ],
-        "Methods": "First Start with cutting the veggies.",
+        "Methods": "First Start with cutting the veggies. Satue onions and garlic add mushrooms and chickpeas later. Then add cocnut milk and curry powder. Simmer for atleast 5mins. Season with salt, pepper and MSG. Enjoy!",
         "badges": [
         {
             "text": "Curry"

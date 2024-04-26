@@ -1,5 +1,5 @@
 var data_path = "https://rhysalfshaw.com/food/data.csv";
-console.log(data_path);
+//var data_path = "food/data.csv";
 
 let data;
 let output_1;
